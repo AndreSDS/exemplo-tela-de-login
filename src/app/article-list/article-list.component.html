@@ -9,10 +9,10 @@
                     {{ article.title }}
                 </h3>
                 <div class="meta-info">
-                    {{ article.date.toDateString() }}
+                    {{ article.date | date:'dd/MM/yyyy - HH:mm' }}
                 </div>
                 <div class="description">
-                    <p [innerHtml]='article.description'></p>
+                    <p >{{ article.description }}</p>
                     <a href="#" class="continue-reading">Continue lendo...</a>
                 </div>
             </div>
