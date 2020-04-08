@@ -1,1 +1,12 @@
-<p>{{ article.content }}</p>
+<div class="article-card">
+    <div class="article-img">
+        <img [src]="article.imageUrl" />
+    </div>
+    <div class="article-head">
+        <h1>{{ article.title }}</h1>
+        <span>{{ article.date | date:'dd/MM/yyyy - HH:mm' }}</span>
+    </div>
+    <div>
+        <p>{{ article.content }}</p>
+    </div>
+</div>
