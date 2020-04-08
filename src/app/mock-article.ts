@@ -4,7 +4,7 @@ export const ARTICLES: Article[] = [
     {
         id: 1,
         title: 'My first article',
-        content: '',
+        content: 'Este contedo pertence ao first-article',
         description: 'This is my first article',
         key: 'my-first-article',
         date: new Date(),
@@ -13,7 +13,7 @@ export const ARTICLES: Article[] = [
     {
         id: 2,
         title: 'My second article',
-        content: '',
+        content: 'Este contedo pertence ao second-article',
         description: 'This is my second article',
         key: 'my-second-article',
         date: new Date(),

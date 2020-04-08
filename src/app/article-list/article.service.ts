@@ -14,4 +14,10 @@ export class ArticleService {
     const articles: Article[] = ARTICLES;
     return of(articles);
   }
+
+  getArticletByKey(key:string){
+    const articles: Article[] = ARTICLES.filter(a => a.key === key);
+    return of(articles[0]);
+  }
+
 }
