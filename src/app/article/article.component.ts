@@ -3,6 +3,8 @@ import { Article } from './../article';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
+import { TitleService } from '../shared/title.service';
 
 @Component({
   selector: 'app-article',
@@ -16,7 +18,9 @@ export class ArticleComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private articleService: ArticleService
+    private articleService: ArticleService,
+    private titleService: Title,
+    private blogTitle : TitleService
   ) { }
 
   ngOnInit(): void {
@@ -33,6 +37,8 @@ export class ArticleComponent implements OnInit {
       ).subscribe(
         article => {
           (!article)? this.router.navigateByUrl('404') : this.article = article;
+          
+          this.titleService.setTitle(`${this.article.title} - ${this.blogTitle.blogTitle}`);
         }
       );
     });

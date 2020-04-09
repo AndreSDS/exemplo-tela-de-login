@@ -1,0 +1,12 @@
+div.back{    
+    background-image: url(https://image.flaticon.com/icons/svg/86/86503.svg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
+    font-weight: 600;
+}
