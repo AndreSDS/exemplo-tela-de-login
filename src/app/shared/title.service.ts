@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class TitleService {
 
   blogTitle = 'My Blog';
+  baseUrl = "http://localhost:4200/"
 
   constructor() { }
 }
