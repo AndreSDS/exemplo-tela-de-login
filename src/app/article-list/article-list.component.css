@@ -2,7 +2,16 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1.25em;
+    padding-top: 88px;
+}
+div.card-body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 200px;
+}
+div.article-img{
+    height: 200px;
+}
+div.article-img img{
+    height: 200px;
 }
